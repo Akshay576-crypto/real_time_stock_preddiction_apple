@@ -3,4 +3,4 @@ pandas
 numpy
 matplotlib
 scikit-learn
-yfinance
+yfinance==0.2.54
