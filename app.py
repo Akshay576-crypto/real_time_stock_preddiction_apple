@@ -14,7 +14,7 @@ stock_symbol = st.text_input("Enter Stock Symbol", "AAPL")
 
 if st.button("Predict"):
     # Download data
-    data = yf.download(stock_symbol, start="2020-01-01", end="2026-01-01")
+    data = yf.download(stock_symbol, period="5y")
 
     if data.empty:
         st.error("No data found. Please check stock symbol.")
